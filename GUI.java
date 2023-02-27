@@ -63,6 +63,7 @@ public class GUI extends JPanel implements ActionListener {
                         map[mX + viewportX][mY + viewportY] = map[mX + viewportX][mY + viewportY] != TILE_BLOCKED
                                 ? TILE_BLOCKED
                                 : TILE_FREE;
+                        la = new LeeAlgorithm(map);
                     }
                 } else if (e.getButton() == 1)
                     if (map[currentX][currentY] != TILE_BLOCKED) {
