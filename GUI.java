@@ -15,8 +15,9 @@ import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
-import java.util.*;
 
 public class GUI extends JPanel implements ActionListener {
     static final int TILE_WIDTH = 64;
