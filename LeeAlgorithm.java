@@ -1,5 +1,9 @@
-import java.util.*;
 import java.awt.Point;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
 
 /**
  * Реализация алгоритма Ли для поиска кратчайшего пути между двумя точками сетки.
@@ -27,7 +31,7 @@ public class LeeAlgorithm {
      *
      * @param start начальная точка пути
      * @param end конечная точка пути
-     * @return список точек, представляющих кратчайший путь, или нуль, если путь не найден
+     * @return список точек, представляющих кратчайший путь, или null, если путь не найден
      */
     public List<Point> findShortestPath(Point start, Point end) {
         int[][] distances = new int[height][width];
